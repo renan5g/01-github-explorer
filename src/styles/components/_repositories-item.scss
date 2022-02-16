@@ -2,8 +2,8 @@ $component-name: 'c-repository';
 
 .#{$component-name} {
   display: flex;
+
   overflow: hidden;
-  gap: 4rem;
   border-radius: 0.5rem;
   height: 106px;
 
@@ -18,17 +18,17 @@ $component-name: 'c-repository';
 
   &__header {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    z-index: 20;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin-left: 1rem;
   }
 
-  &__main {
+  &__aside {
     flex: 1 1 0%;
     display: flex;
     align-items: center;
     color: hsl(206, 6%, 44%);
-    z-index: 20;
   }
 
   &__description {
@@ -45,5 +45,6 @@ $component-name: 'c-repository';
     width: 8px;
     height: 106px;
     background: hsl(258, 74%, 62%);
+    flex-shrink: 0;
   }
 }

@@ -4,7 +4,7 @@ $component-name: 'c-repositories';
   margin: 0px auto;
   width: 100%;
   padding: 0 30px;
-  max-width: 1120px;
+  max-width: 1200px;
   text-align: center;
 
   &__heading {
@@ -16,5 +16,6 @@ $component-name: 'c-repositories';
     display: grid;
     gap: 1rem;
     list-style: none;
+    margin-bottom: 3rem;
   }
 }
