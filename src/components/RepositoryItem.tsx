@@ -15,7 +15,7 @@ export function RepositoryItem({ data }: Props) {
     <a href={data.html_url} className="c-repository">
       <div className="c-repository__background" />
       <header className="c-repository__header">
-        <h3>{data?.name}</h3>
+        <h3>{data.name}</h3>
         <p className="c-repository__description">{data.description}</p>
       </header>
 
