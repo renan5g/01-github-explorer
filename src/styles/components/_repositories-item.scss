@@ -1,0 +1,49 @@
+$component-name: 'c-repository';
+
+.#{$component-name} {
+  display: flex;
+  overflow: hidden;
+  gap: 4rem;
+  border-radius: 0.5rem;
+  height: 106px;
+
+  background: #fff;
+  color: hsl(240, 8%, 24%);
+  transition: border 0.2s ease 0s, transform 0.2s ease 0s;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: hsl(258, 74%, 62%) 0px 0px 0px 2px inset;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 20;
+  }
+
+  &__main {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    color: hsl(206, 6%, 44%);
+    z-index: 20;
+  }
+
+  &__description {
+    margin-top: 0;
+    max-width: 32rem;
+  }
+
+  &__icon {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+
+  &__background {
+    width: 8px;
+    height: 106px;
+    background: hsl(258, 74%, 62%);
+  }
+}
